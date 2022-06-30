@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+.profile-container{
+  background-color: black;
+  height: 100vh;
+  max-height: 110vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  overflow:hidden;
+  color: rgb(240, 236, 236);
+  font-family: 'Acme', sans-serif;
+}
+
+.content-profile{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3%;
+  margin-left: 25%;
+}
+
+.register-inputs{
+  width: 60%;
+}
+
+.logo-marvel-profile{
+  width: 20%;
+  padding-left: 37%;
+  padding-top: 2%;
+}
+
+.profile-button{
+  margin-left: 10%;
+  margin-bottom: 1%;
+}
+
+.att{
+  color: rgb(240, 236, 236);
+  font-family: 'Acme', sans-serif;
+  padding-left: 40%;
+  margin-top: 3%;
+}

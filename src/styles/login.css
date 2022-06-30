@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+.login-container {
+    background: url('../images/backLogin.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    font-family: 'Acme', sans-serif;
+    font-size: 2vh;
+    color: rgb(240, 236, 236);
+    overflow:hidden;
+}
+
+.loginForm {
+  background: linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60));
+  display: flex;
+  flex-direction: column;
+  padding-left: 3%;
+  height: 70vh;
+  width: 50vh;
+  margin-top: 10%;
+  padding-top: 3%;
+  margin-bottom: 5vh;
+  padding-bottom: 1%;
+}
+
+.logo-marvel-login{
+  width: 80%;
+  padding-left: 3%;
+  padding-bottom: 5%;
+}
+
+.loginButtons {
+  padding-top: 4%;
+}
