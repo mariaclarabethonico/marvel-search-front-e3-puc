@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
 
 .login-container {
-    background: url('../images/backLogin.jpg');
+  background: url("../images/logofundo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;

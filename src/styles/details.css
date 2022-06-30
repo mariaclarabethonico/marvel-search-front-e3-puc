@@ -3,17 +3,17 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: black;
+  background-color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 2.3vh;
-  color: rgb(240, 236, 236);
+  color: black;
   padding-bottom: 1%;
 }
 
 .pic{
   width: 22%;
   border-radius: 3%;
-  box-shadow: 0 0 1em rgb(204, 204, 204);
+  box-shadow: 0 0 1em black;
 }
 .pic:hover {
   transform: scale(1.1);
@@ -43,11 +43,11 @@
 
 .external:hover{
   font-size: 2.2vh;
-  color: rgb(240, 236, 236);
+  color: red;
 }
 
 .title-detail{
-  color: rgb(240, 236, 236);
+  color: black;
   margin-top: 2%;
   margin-bottom: 1%;
   text-align: center;
@@ -63,7 +63,7 @@
 
 .name-detail:hover{
   font-size: 5.5vh;
-  color: rgb(240, 236, 236);
+  color: rgb(245, 16, 16);
 }
 
 .related{
@@ -72,19 +72,20 @@
   padding: 0;
   margin-top: 0;
   margin-bottom: 1%;
+  
 }
 
 .link-comic-page{
-  text-decoration: none;
-  color: rgb(240, 236, 236);
-}
+  text-decoration:none;
+  color: black;
+  }
 
 .link-comic-page:hover{
   font-size: 3vh;
 }
 
 .add-fav{
-  color: rgb(240, 236, 236);
+  color: black;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0.5%;
 }

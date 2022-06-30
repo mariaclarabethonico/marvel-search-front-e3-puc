@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
 .profile-container{
-  background-color: black;
+  background: url("../images/logofundo.jpg");
   height: 100vh;
   max-height: 110vh;
   width: 100%;
@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-position: fixed;
   overflow:hidden;
-  color: rgb(240, 236, 236);
+  color: rgb(245, 16, 16);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .att{
-  color: rgb(240, 236, 236);
+  color: rgb(245, 16, 16);
   font-family: 'Roboto', sans-serif;
   padding-left: 40%;
   margin-top: 3%;

@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
 .page-container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: url("../images/backLogin.jpg");
-  font-family:'Roboto', sans-serif;
+  background: url("../images/logofundo.jpg");
+  font-family: "Roboto", sans-serif;
   font-size: 2vh;
-  }
+}
 
 .character-pic {
   width: 90%;
@@ -30,8 +30,8 @@
   width: 50%;
   padding-left: 30%;
   padding-bottom: 5%;
-  color: black;
-  }
+  color-scheme: black;
+}
 
 .title {
   font-size: 10vh;
@@ -46,6 +46,7 @@
   padding-left: 30%;
   margin-top: 2%;
   margin-bottom: 1%;
+  width: 45%;
 }
 
 .cards {
@@ -79,7 +80,7 @@
 .rm-favorite {
   width: 70%;
   color: black;
-  font-family: 'Roboto', sans-serif;;
+  font-family: "Roboto", sans-serif;
   font-size: 1.9vh;
   font-weight: bolder;
   background-color: black;

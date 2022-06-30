@@ -1,5 +1,5 @@
-const baseURL = 'https://marvel-back-bf.herokuapp.com/'
-const applicationJsonContent = 'application/json';
+const baseURL = "https://marvel-back-bf.herokuapp.com/";
+const applicationJsonContent = "application/json";
 export const getCharacterByName = async (name) => {
   const character = await fetch(`${baseURL}character/name/${name}`);
   const response = await character.json();
@@ -22,16 +22,16 @@ export const getComicById = async (id) => {
 };
 export const getFavoriteByUserId = async (id) => {
   const favorite = await fetch(`${baseURL}favorite/${id}`);
-  console.log(favorite, 'nativeAPI')
+  console.log(favorite, "nativeAPI");
   const response = await favorite.json();
   return response;
 };
 
 export const registerUser = async (name, email, password) => {
   const newUser = await fetch(`${baseURL}user/register`, {
-    method: 'POST',
+    method: "POST",
     headers: {
-      'Content-Type': applicationJsonContent,
+      "Content-Type": applicationJsonContent,
     },
     body: JSON.stringify({ name, email, password }),
   })
@@ -39,51 +39,55 @@ export const registerUser = async (name, email, password) => {
     .catch((error) => console.log(error));
   return newUser;
 };
-export const loginUser = (email, password) => fetch(`${baseURL}user/login`, {
-  method: 'POST',
-  headers: {
-    'Content-type': applicationJsonContent,
-  },
-  body: JSON.stringify({ email, password }),
-})
-  .then((response) => response.json())
-  .catch((error) => console.log(error));
-  
-export const updateUserAPI = (name, email, password, id, token) => fetch(`${baseURL}user/update`, {
-  method: 'PUT',
-  headers: {
-    'Content-type': applicationJsonContent,
-    authorization: token,
-  },
-  body: JSON.stringify({ name, email, password, id }),
-}).then((response) => response);
-
-export const addFavorite = (id_favorite, name, url_image, related, user_id) => fetch(`${baseURL}favorite`, {
-  method: 'POST',
-  headers: {
-    'Content-type': applicationJsonContent,
-  },
-  body: JSON.stringify({ id_favorite, name, url_image, related, user_id }),
-})
-  .then((response) => response.json())
-  .catch((error) => console.log(error));
-
-  export const deleteFavorite = (id) => fetch(`${baseURL}favorite/delete`, {
-    method: 'DELETE',
+export const loginUser = (email, password) =>
+  fetch(`${baseURL}user/login`, {
+    method: "POST",
     headers: {
-      'Content-type': applicationJsonContent,
+      "Content-type": applicationJsonContent,
+    },
+    body: JSON.stringify({ email, password }),
+  })
+    .then((response) => response.json())
+    .catch((error) => console.log(error));
+
+export const updateUserAPI = (name, email, password, id, token) =>
+  fetch(`${baseURL}user/update`, {
+    method: "PUT",
+    headers: {
+      "Content-type": applicationJsonContent,
+      authorization: token,
+    },
+    body: JSON.stringify({ name, email, password, id }),
+  }).then((response) => response);
+
+export const addFavorite = (id_favorite, name, url_image, related, user_id) =>
+  fetch(`${baseURL}favorite`, {
+    method: "POST",
+    headers: {
+      "Content-type": applicationJsonContent,
+    },
+    body: JSON.stringify({ id_favorite, name, url_image, related, user_id }),
+  })
+    .then((response) => response.json())
+    .catch((error) => console.log(error));
+
+export const deleteFavorite = (id) =>
+  fetch(`${baseURL}favorite/delete`, {
+    method: "DELETE",
+    headers: {
+      "Content-type": applicationJsonContent,
     },
     body: JSON.stringify({ id }),
   }).then((response) => response);
 
-  export const getAllCharacters = async (offset) => {
-    const all = await fetch(`${baseURL}character/all/${offset}`)
-    const response = await all.json();
-    return response;
-  };
+export const getAllCharacters = async (offset) => {
+  const all = await fetch(`${baseURL}character/all/${offset}`);
+  const response = await all.json();
+  return response;
+};
 
-  export const getAllComics = async (offset) => {
-    const all = await fetch(`${baseURL}comic/all/${offset}`)
-    const response = await all.json();
-    return response;
-  };
+export const getAllComics = async (offset) => {
+  const all = await fetch(`${baseURL}comic/all/${offset}`);
+  const response = await all.json();
+  return response;
+};

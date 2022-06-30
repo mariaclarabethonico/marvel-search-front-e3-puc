@@ -6,7 +6,7 @@ const validateEmail = (email) => {
 const validatePassword = (password) => {
   const regexPassword = /[a-z0-9]+/;
   const minLength = 6;
-  return (regexPassword.test(password) && password.length >= minLength);
+  return regexPassword.test(password) && password.length >= minLength;
 };
 
 module.exports = {

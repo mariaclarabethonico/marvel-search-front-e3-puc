@@ -7,16 +7,17 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: transparent ;
-  border-bottom: 5px double rgb(245, 16, 16);
-  border-top: 5px double rgb(245, 16, 16);
+  background: url("../images/logoM2.jpg") ;
+  border-bottom: 3px double rgb(245, 16, 16);
+  border-top: 3px double rgb(245, 16, 16);
   overflow:hidden;
+
 }
 
 .divs-menu {
   padding-right: 5%;
   padding-left: 5%;
-  width: 0%;
+  width: -1%;
 }
 
 .first{
@@ -25,11 +26,12 @@
 
 .text-menu{
   text-decoration: none;
-  color: black;
+  color: white;
+  z-index: 5;
 }
 
 .text-menu:hover{
-  font-size: 30.7vh;
+  font-size: 2.7vh;
   color: red;
 }
 
