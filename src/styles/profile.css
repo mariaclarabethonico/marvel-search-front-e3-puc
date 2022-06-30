@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
 .profile-container{
   background-color: black;
   height: 100vh;
@@ -9,7 +9,7 @@
   background-position: fixed;
   overflow:hidden;
   color: rgb(240, 236, 236);
-  font-family: 'Acme', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .content-profile{
@@ -37,7 +37,7 @@
 
 .att{
   color: rgb(240, 236, 236);
-  font-family: 'Acme', sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding-left: 40%;
   margin-top: 3%;
 }

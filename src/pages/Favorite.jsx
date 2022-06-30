@@ -52,7 +52,7 @@ export default function Favorite() {
       {favorite === "You don't hav favorite!" && loading
       ? <Loading /> 
       : <div>
-      <h2 className='title'>Favorite</h2>
+      <h2 className='title'>Favoritos</h2>
       <div className="all-cards">
         {favorite.map((fav, index) => (
           <div className='cards' key={index}>
@@ -62,9 +62,9 @@ export default function Favorite() {
               src={fav.url_image && fav.url_image}
               alt="Favorite Thumbnail" />
             <Link className='link' to={verifyTipyOfFavorite(fav)}>
-              <p>More details</p>
+              <p>Mais Detalhes</p>
             </Link>
-            <button className='rm-favorite' type='button' onClick={() => removeFav(fav)}>Remove Favorite</button>
+            <button className='rm-favorite' type='button' onClick={() => removeFav(fav)}>Remover Favorito</button>
           </div>
         ))}
       </div>

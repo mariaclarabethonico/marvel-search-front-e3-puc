@@ -51,25 +51,25 @@ export default function Register() {
       <img className='logo-marvel-register' src={logoMarvel} alt='logo marvel' />
     <form className="register-form">
       <Input
-        title="Name"
+        title="Nome"
         type="text"
         value={name}
         onChange={setField}
-        placeholder="User name"
+        placeholder="nome usuário"
       />
       <Input
-        title="Email"
+        title="E-mail"
         type="text"
         value={email}
         onChange={setField}
-        placeholder="User email"
+        placeholder="e-mail usuário"
       />
       <Input
-        title="Password"
+        title="Senha"
         type="password"
         value={password}
         onChange={setField}
-        placeholder="User password"
+        placeholder="senha usuário"
       />
       <Button
         className="button-register button"

@@ -67,20 +67,20 @@ export default function AllCharacters() {
       <div>
       {dataAPI.length === 0 ? <Loading /> : 
         <div>
-          <h2 className='title'>Characters</h2>
+          <h2 className='title'>Lista de Personagens</h2>
           <div className='input-pages'>
             <Input
-              title="Search Character"
+              title="Buscar Personagem"
               type="text"
               value={nameParameter}
               onChange={setField}
             />
             <div className='buttons-search'>
               <Button
-                title="Search"
+                title="Buscar"
                 onClick={async () => await searchCharacterByName()}
               />
-              <button className='button' type="button" onClick={() => cleanState()}>Get All</button>
+              <button className='button' type="button" onClick={() => cleanState()}>Ver Todos</button>
             </div>
           </div>
           {console.log(actualCharacter)}
@@ -95,7 +95,7 @@ export default function AllCharacters() {
                       src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
                       alt="Character Thumbnail" />
                     <Link className='link' to={`/characters/${character.id}`}>
-                      <p>More details</p>
+                      <p>Mais detalhes</p>
                     </Link>
                   </div>
                 )) :
@@ -106,7 +106,7 @@ export default function AllCharacters() {
                     src={actualCharacter.image && actualCharacter.image}
                     alt="Character Thumbnail" />
                   <Link className='link' to={`/characters/${actualCharacter.id}`}>
-                    <p>More details</p>
+                    <p>Mais Detalhes</p>
                   </Link>
                 </div>
             }
@@ -117,7 +117,7 @@ export default function AllCharacters() {
               type="button"
               onClick={() => handleClickBack()}
             />
-            <button className='button' type="button" onClick={() => handleClick()}>Next</button>
+            <button className='button' type="button" onClick={() => handleClick()}>Próximo</button>
           </div>
         </div>
 }

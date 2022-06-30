@@ -65,7 +65,7 @@ export default function AllCharacters() {
       <div>
       {dataAPI.length === 0 ? <Loading /> : 
       <div>
-      <h1 className='title'>Comics</h1>
+      <h1 className='title'>HQs</h1>
       <div className='input-pages'>
         <Input
           title="Search Comic"
@@ -77,7 +77,7 @@ export default function AllCharacters() {
           title="Search"
           onClick={async () => await searchComicByTitle()}
         />
-        <button type="button" className='button' onClick={() => cleanState()}>Get All</button>
+        <button type="button" className='button' onClick={() => cleanState()}>Ver Todos</button>
       </div>
       <div className="all-cards">
         {
@@ -90,7 +90,7 @@ export default function AllCharacters() {
                   src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
                   alt="Comic Thumbnail" />
                 <Link className='link' to={`/comics/${comic.id}`}>
-                  <p>More details</p>
+                  <p>Mais Detalhes</p>
                 </Link>
               </div>
             )) :
@@ -101,7 +101,7 @@ export default function AllCharacters() {
                 src={actualComic.image}
                 alt="Character Thumbnail" />
               <Link className='link' to={`/comics/${actualComic.id}`}>
-                <p>More details</p>
+                <p>Mais Detalhes</p>
               </Link>
             </div>
         }
@@ -112,7 +112,7 @@ export default function AllCharacters() {
         type="button"
         onClick={() => handleClickBack()}
         />
-        <button className='button' type="button" onClick={() => handleClick()}>Next</button>
+        <button className='button' type="button" onClick={() => handleClick()}>Próximo</button>
       </div>
       </div>
       }

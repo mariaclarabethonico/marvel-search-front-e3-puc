@@ -62,14 +62,14 @@ export default function Login() {
           <img className='logo-marvel-login' src={logoMarvel} alt='logo marvel' />
           <section className="loginInputs">
             <Input
-              title="Email"
+              title="E-mail"
               type="text"
               value={email}
               onChange={setField}
               placeholder="User email"
             />
             <Input
-              title="Password"
+              title="Senha"
               type="password"
               value={password}
               onChange={setField}
@@ -83,9 +83,9 @@ export default function Login() {
               isDisabled={isDisabled}
               onClick={() => handleClick()}
             />
-            <h3>Don't have an account?</h3>
+            <h3>Não possui Conta?</h3>
             <Button
-              title="Sign up"
+              title="Cadastrar"
               onClick={() => history.push('/register')}
             />
           </section>

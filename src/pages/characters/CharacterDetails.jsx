@@ -52,7 +52,7 @@ export default function CharacterDetails({ match: { params: { id } } }) {
       <div>
       {character.length === 0 ? <Loading /> : 
         <div>
-      <h1 className='title-detail'>Character's Detail</h1>
+      <h1 className='title-detail'>Detalhes de Personagens</h1>
       <div className='detail'>
         <h2 className="name-detail">{character.name}</h2>
         <img
@@ -67,14 +67,14 @@ export default function CharacterDetails({ match: { params: { id } } }) {
             <Link className='link' to={`/comics/${getComicId(element)}`}>{element.name}</Link>
           </div>
         ))}
-        <a className='external' href={character.externalInformation}>External information</a>
+        <a className='external' href={character.externalInformation}>Informação Externa</a>
         {message ? <span className='add-fav'>{message}</span> : null}
         <button
         className='button'
         type='button'
         onClick={() => addFavoriteOnDB(character.id, character.name, character.image, 'comics', id_user)}
         >
-          Favorite
+          Favorito
         </button>
       </div>
       </div>
