@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Candal&family=Sigmar+One&display=swap");
 
 .button {
-  font-family: 'Roboto', sans-serif;;
+  font-family: "Candal", sans-serif;
   font-size: 1.9vh;
   font-weight: bolder;
   color: rgb(216, 23, 23);

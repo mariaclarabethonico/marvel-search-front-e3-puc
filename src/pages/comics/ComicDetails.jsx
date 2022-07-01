@@ -64,7 +64,7 @@ export default function CharacterDetails({
           <Loading />
         ) : (
           <div>
-            <h1 className="title-detail">Comic's Detail</h1>
+            <h1 className="title-detail">HQs Detalhes</h1>
             <div className="detail">
               <h2 className="name-detail">{comic.title}</h2>
               <img className="pic" src={comic.image} alt="Comic Thumbnail" />
@@ -88,7 +88,7 @@ export default function CharacterDetails({
                   </div>
                 ))}
               <a className="external" href={comic.externalInformation}>
-                External information
+                Para mais informações
               </a>
               {message ? <span className="add-fav">{message}</span> : null}
               <button
@@ -104,7 +104,7 @@ export default function CharacterDetails({
                   )
                 }
               >
-                Favorite
+                Favoritar
               </button>
             </div>
           </div>

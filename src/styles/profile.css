@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Candal&family=Sigmar+One&display=swap");
 .profile-container{
-  background: url("../images/logofundo.jpg");
+  background: url("../images/perfilfundo.jpg");
   height: 100vh;
   max-height: 110vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: fixed;
+  background-position: 255% ;
   overflow:hidden;
-  color: rgb(245, 16, 16);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Candal", sans-serif;
 }
 
 .content-profile{
@@ -37,7 +36,7 @@
 
 .att{
   color: rgb(245, 16, 16);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Candal", sans-serif;
   padding-left: 40%;
   margin-top: 3%;
 }

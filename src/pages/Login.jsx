@@ -84,7 +84,7 @@ export default function Login() {
                   isDisabled={isDisabled}
                   onClick={() => handleClick()}
                 />
-                <h3>Don't have an account?</h3>
+                <h3>Não possui conta?</h3>
                 <Button
                   title="Sign up"
                   onClick={() => history.push("/register")}

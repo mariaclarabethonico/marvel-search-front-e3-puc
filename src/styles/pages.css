@@ -1,11 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Candal&family=Sigmar+One&display=swap");
 .page-container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: url("../images/logofundo.jpg");
-  font-family: "Roboto", sans-serif;
+  font-family: "Candal", sans-serif;
   font-size: 2vh;
+  background: url("../images/marvel-minimalist-abs33xotg62ai58u.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40%;
+  
+
+  z-index: 1;
 }
 
 .character-pic {
@@ -70,7 +76,7 @@
 
 .link:hover {
   font-size: 2.2vh;
-  color: rgb(245, 16, 16);
+  color: red;
 }
 
 .favorite-page {
@@ -79,7 +85,7 @@
 
 .rm-favorite {
   width: 70%;
-  color: black;
+  color: white;
   font-family: "Roboto", sans-serif;
   font-size: 1.9vh;
   font-weight: bolder;
@@ -89,7 +95,7 @@
 
 .rm-favorite:hover {
   color: red;
-  font-size: 2.3vh;
+  font-size: 1.9vh;
   border: 1px solid red;
 }
 

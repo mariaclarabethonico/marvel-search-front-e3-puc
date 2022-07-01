@@ -67,10 +67,10 @@ export default function AllCharacters() {
           <Loading />
         ) : (
           <div>
-            <h1 className="title">Comics</h1>
+            <h1 className="title">HQs</h1>
             <div className="input-pages">
               <Input
-                title="Search Comic"
+                title="Buscar HQs"
                 type="text"
                 value={titleParameter}
                 onChange={setField}
@@ -98,7 +98,7 @@ export default function AllCharacters() {
                       alt="Comic Thumbnail"
                     />
                     <Link className="link" to={`/comics/${comic.id}`}>
-                      <p>More details</p>
+                      <p>Mais Detalhes</p>
                     </Link>
                   </div>
                 ))
@@ -111,7 +111,7 @@ export default function AllCharacters() {
                     alt="Character Thumbnail"
                   />
                   <Link className="link" to={`/comics/${actualComic.id}`}>
-                    <p>More details</p>
+                    <p>Mais Detalhes</p>
                   </Link>
                 </div>
               )}

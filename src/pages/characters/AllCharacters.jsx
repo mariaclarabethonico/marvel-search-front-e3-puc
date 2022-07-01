@@ -54,7 +54,7 @@ export default function AllCharacters() {
   };
 
   const setField = (field, value) => {
-    if (field === "Search Character") return setNameParameter(value);
+    if (field === "Buscar Personagens") return setNameParameter(value);
   };
 
   const cleanState = () => {
@@ -67,15 +67,16 @@ export default function AllCharacters() {
       <header className="header">
         <Menu />
       </header>
+      <div id="container-imagem"></div>
       <div>
         {dataAPI.length === 0 ? (
           <Loading />
         ) : (
           <div>
-            <h2 className="title">Characters</h2>
+            <h2 className="title">Personagens</h2>
             <div className="input-pages">
               <Input
-                title="Search Character"
+                title="Buscar Personagens"
                 type="text"
                 value={nameParameter}
                 onChange={setField}
@@ -106,7 +107,7 @@ export default function AllCharacters() {
                       alt="Character Thumbnail"
                     />
                     <Link className="link" to={`/characters/${character.id}`}>
-                      <p>More details</p>
+                      <p>Mais Detalhes</p>
                     </Link>
                   </div>
                 ))
@@ -122,7 +123,7 @@ export default function AllCharacters() {
                     className="link"
                     to={`/characters/${actualCharacter.id}`}
                   >
-                    <p>More details</p>
+                    <p>Mais Detalhes</p>
                   </Link>
                 </div>
               )}
