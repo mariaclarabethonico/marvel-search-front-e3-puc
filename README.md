@@ -25,6 +25,19 @@ Professor(a): Simone de Assis Alves da Silva
   - Requisição à API da Marvel e à API desenvolvida para este projeto
 
 ---
+# Lista de Telas e Componentes
+
+Telas:
+
+    Login
+    Cadastro
+    Perfil
+    Página princial de personagens
+    Página de detalhes de personagens
+    Página princial de HQs
+    Página de detalhes de HQs
+    Favoritos do usuário
+
  - API da Marvel: https://developer.marvel.com/
  
 
